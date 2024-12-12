@@ -1,0 +1,49 @@
+package com.coforge.traning.shopstop.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.coforge.traning.shopstop.model.Product;
+import com.coforge.traning.shopstop.service.OrderService;
+import com.coforge.traning.shopstop.service.ProductClient;
+
+/**
+*Author:Koppula.Reddy
+*date:Nov 29, 2024
+*time:3:15:44 PM
+*project:order-service
+
+**/
+@RestController
+@RequestMapping("/api")
+public class OrderController {
+	
+	@Autowired
+	private OrderService orderService;
+	
+	//inject instance of feign client
+	
+	@Autowired
+	private ProductClient productClient;
+	
+	@GetMapping("/orders/products")
+	public ResponseEntity<List<Product>> getAll(){
+		ResponseEntity<List<Product>> product=productClient.getAllProducts();
+		
+		if(product.getStatusCode()==HttpStatus.OK) {
+			List<Product> p=product.getBody();
+			return ResponseEntity.ok(p);
+		}
+		else {
+			return ResponseEntity.status(product.getStatusCode()).body(null);
+		}
+	}
+
+
+}

@@ -1,0 +1,12 @@
+package com.coforge.traning.shopstop.repositoty;
+
+/**
+*Author:Koppula.Reddy
+*date:Nov 29, 2024
+*time:3:11:58 PM
+*project:order-service
+
+**/
+public interface OrderRepository {
+
+}

@@ -1,0 +1,17 @@
+package com.coforge.traning.shopstop.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+*Author:Koppula.Reddy
+*date:Nov 29, 2024
+*time:3:15:44 PM
+*project:order-service
+
+**/
+@RestController
+@RequestMapping("/")
+public class OrderController {
+
+}

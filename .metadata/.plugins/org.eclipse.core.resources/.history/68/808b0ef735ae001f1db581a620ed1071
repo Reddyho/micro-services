@@ -1,0 +1,12 @@
+package com.coforge.traning.shopstop.model;
+
+/**
+*Author:Koppula.Reddy
+*date:Nov 29, 2024
+*time:3:05:16 PM
+*project:order-service
+
+**/
+public class Order {
+
+}

@@ -1,0 +1,12 @@
+package com.coforge.taraning.shopstop.controller;
+
+/**
+*Author:Koppula.Reddy
+*date:Nov 29, 2024
+*time:12:05:12 PM
+*project:payment-service
+
+**/
+public class PaymentController {
+
+}

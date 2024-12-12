@@ -1,0 +1,12 @@
+package com.coforge.traning.shopstop.Exception;
+
+/**
+*Author:Koppula.Reddy
+*date:Nov 29, 2024
+*time:1:07:36 PM
+*project:product-service
+
+**/
+public class ResourseNotFoundException {
+
+}
